@@ -1,3 +1,6 @@
+def suma(a, b):
+    return a + b
+
 def main():
     print("Calculadora Simple")
     print("Seleccione una operación:")
@@ -9,7 +12,11 @@ def main():
     
     opcion = input("Ingrese el número de la operación deseada: ")
     
-    if opcion == '5':
+    if opcion == '1':
+        num1 = float(input("Ingrese el primer número: "))
+        num2 = float(input("Ingrese el segundo número: "))
+        print(f"El resultado de la suma es: {suma(num1, num2)}")
+    elif opcion == '5':
         print("Saliendo de la calculadora...")
     else:
         print("Opción seleccionada: ", opcion)
